@@ -3,16 +3,16 @@ package bfs;
 import java.util.*;
 
 /*
-* ±×·¡ÇÁ°¡ matrix·Î ÁÖ¾îÁ³À» ¶§, bfs¸¦ »ç¿ëÇÑ ¹®Á¦
+* ê·¸ë˜í”„ê°€ matrixë¡œ ì£¼ì–´ì¡Œì„ ë•Œ, bfsë¥¼ ì‚¬ìš©í•œ ë¬¸ì œ
 * */
 public class ShortestPathInMap {
 
     public static void main(String[] args) {
 
-//		1¹ø ¿¹Á¦ ans = 11
+//		1ë²ˆ ì˜ˆì œ ans = 11
 //		int[][] maps = {{1,0,1,1,1},{1,0,1,0,1},{1,0,1,1,1},{1,1,1,0,1},{0,0,0,0,1}};
 
-//		2¹ø ¿¹Á¦ ans = -1
+//		2ë²ˆ ì˜ˆì œ ans = -1
         int[][] maps = {{1,0,1,1,1},{1,0,1,0,1},{1,0,1,1,1},{1,1,1,0,0},{0,0,0,0,1}};
 
         System.out.println(new ShortestPathInMap().solution(maps));

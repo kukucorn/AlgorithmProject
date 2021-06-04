@@ -1,4 +1,4 @@
-package shortestPathProblem.dijkstra;//package shortestPathProblem.dijkstra;
+//package shortestPathProblem.dijkstra;
 //
 //import java.io.BufferedReader;
 //import java.io.IOException;
@@ -33,7 +33,7 @@ package shortestPathProblem.dijkstra;//package shortestPathProblem.dijkstra;
 //
 //		br.close();
 //	}
-//	
+//
 //	private static StringBuilder distanceToSB(int[] arr) {
 //		StringBuilder sb = new StringBuilder();
 //		for (int i = 1; i < arr.length; i++) {
@@ -58,7 +58,7 @@ package shortestPathProblem.dijkstra;//package shortestPathProblem.dijkstra;
 //			edges[i] = new ArrayList<Edge>();
 //		}
 //	}
-//	
+//
 //	private void initDistance() {
 //		distance = new int[n+1];
 //		for (int i = 1; i < n+1; i++) {
@@ -67,22 +67,22 @@ package shortestPathProblem.dijkstra;//package shortestPathProblem.dijkstra;
 //	}
 //
 //	public void dijkstra(int start) {
-//		
+//
 //		initDistance(); // distance arr 할당 및 값 초기화.
 //		boolean[] isVisited = new boolean[n + 1]; // 해당 노드를 방문했는지 체크할 변수
 //
 //		PriorityQueue<Route> pQueue = new PriorityQueue<>();
-//		
+//
 //		// 시작값 초기화.
 //		distance[start] = 0;
 //		pQueue.add(new Route(start, 0));
 //
 //		while(!pQueue.isEmpty() ) {
 //			Route route = pQueue.poll();
-//			
+//
 //			if(isVisited[route.dst]) continue;
-//			isVisited[route.dst] = true; 
-//			
+//			isVisited[route.dst] = true;
+//
 //			for(Edge edge : edges[route.dst]) {
 //				if(route.weight + edge.weight < distance[edge.end]) {
 //					distance[edge.end] = route.weight + edge.weight;
@@ -91,14 +91,14 @@ package shortestPathProblem.dijkstra;//package shortestPathProblem.dijkstra;
 //			}
 //		}
 //	}
-//	
+//
 //	public void addEdge(StringTokenizer st) {
 //		int start = Integer.parseInt(st.nextToken());
 //		int end = Integer.parseInt(st.nextToken());
 //		int weight = Integer.parseInt(st.nextToken());
 //		edges[start].add(new Edge(start, end, weight));
 //	}
-//	
+//
 //	public int[] getDistance() {
 //		return distance;
 //	}
@@ -108,7 +108,7 @@ package shortestPathProblem.dijkstra;//package shortestPathProblem.dijkstra;
 //	int start;
 //	int end;
 //	int weight;
-//	
+//
 //	public Edge(int s, int e, int w) {
 //		this.start = s;
 //		this.end = e;
@@ -132,8 +132,8 @@ package shortestPathProblem.dijkstra;//package shortestPathProblem.dijkstra;
 //		return this.weight - o.weight;
 //	}
 //
-////	@Override
-////	public String toString() {
-////		return "dst : " + dst + ", weight : " + weight;
-////	}
+//	@Override
+//	public String toString() {
+//		return "dst : " + dst + ", weight : " + weight;
+//	}
 //}
