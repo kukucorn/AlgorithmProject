@@ -1,3 +1,6 @@
 /out
 /.idea
 AlgorithmProject.iml
+/src/java/Main.java
+/src/java/Solution.java
+/src/java/InputGenerator.java
